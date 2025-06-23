@@ -1,20 +1,8 @@
-"""Defines SQLAlchemy models for User and Event"""
-from werkzeug.security import generate_password_hash, check_password_hash
+"""Defines in-memory model for Event."""
 
-# In-memory data storage for demonstration purposes
-USERS = {}
+# In-memory event storage for demonstration purposes
 EVENTS = {}
 EVENT_COUNTER = [1]  # Mutable counter to simulate DB auto-increment
-
-
-class User:
-    """Represents a user with basic authentication."""
-    def __init__(self, username, password):
-        self.username = username
-        self.password_hash = generate_password_hash(password)
-
-    def check_password(self, password):
-        return check_password_hash(self.password_hash, password)
 
 
 class Event:
@@ -25,7 +13,7 @@ class Event:
         self.title = title
         self.description = description
         self.date = date
-        self.owner = owner  # username
+        self.owner = owner  # for now, always 'anonymous' or public
 
     def as_dict(self):
         return {
