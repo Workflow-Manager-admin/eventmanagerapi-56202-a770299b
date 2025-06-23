@@ -1,0 +1,5 @@
+{
+  "task_description": "{'description': 'A backend API for managing events, including event creation, updating, listing, and deletion.', 'containers': [{'container_name': 'event_manager_backend', 'platform': 'backend', 'framework': 'flask', 'description': 'Provides RESTful APIs for event management such as creating, updating, listing, and deleting events.', 'interfaces': 'REST API endpoints for event management (CRUD operations)', 'relative_path': 'event_manager_backend_workspace', 'dependencies': [], 'container_type': 'backend', 'container_details': 'Implements core business logic for event management, user authentication, and input validation.'}], '3rd_party_services': [], 'figma_components': '', 'manifest_path': '/home/kavia/workspace/code-generation/.project_manifest.yaml'}",
+  "tasks": {},
+  "next_task_id": 1
+}
